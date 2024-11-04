@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState, useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
@@ -29,10 +28,11 @@ const StarBackground = (props: any) => {
         >
             <PointMaterial
                 transparent
-                color="$fff"
+                color="#fff"
                 size={0.002}
                 sizeAttenuation={true}
-                dethWrite={false}
+                // dethWrite={false}
+                depthWrite={false}
             />
         </Points>
     </group>
@@ -40,8 +40,13 @@ const StarBackground = (props: any) => {
 };
 
 const StarsCanvas = () => (
-    <div className="w-full h-auto fixed inset-0 z-[20]">
-        <Canvas camera={{position: [0, 0, 1]}}>
+    <div style={{ pointerEvents: "none" }}
+        className="w-full h-full fixed inset-0 -z-10  pointer-events-none">
+        {/*className="w-full h-auto fixed inset-0 z-[20] cursor-pointer">*/}
+
+        <Canvas
+            style={{ pointerEvents: "none", position:"relative"}}
+            camera={{position: [0, 0, 1]}}>
         <Suspense fallback={null}>
             <StarBackground />
         </Suspense>

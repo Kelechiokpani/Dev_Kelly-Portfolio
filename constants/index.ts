@@ -1,3 +1,6 @@
+import LinkedIn from "../public/icons8-linkedin.png"
+import twitter from "../public/icons8-x.png"
+
 export const Skill_data = [
     {
       skill_name: "Html 5",
@@ -82,17 +85,20 @@ export const Skill_data = [
   
   export const Socials = [
     {
-      name: "Discord",
-      src: "/instagram.svg",
+      name: "LinkedIn",
+      src: LinkedIn,
+      link: "https://www.linkedin.com/in/kelechi-okpani-3b1238221/"
+      // src: "/instagram.svg",
     },
     {
-      name: "Facebook",
-      src: "/facebook.svg",
+      name: "Twitter",
+      src: twitter,
+      link: "https://x.com/Dev__kelly"
     },
-    {
-      name: "Instagram",
-      src: "/discord.svg",
-    },
+    // {
+    //   name: "Instagram",
+    //   src: "/discord.svg",
+    // },
   ];
   
   
@@ -185,24 +191,24 @@ export const Skill_data = [
       width: 55,
       height: 55,
     },
-    {
-      skill_name: "Postger SQL",
-      Image: "/postger.png",
-      width: 70,
-      height: 70,
-    },
-    {
-      skill_name: "My SQL",
-      Image: "/mysql.png",
-      width: 70,
-      height: 70,
-    },
-    {
-      skill_name: "Prisma",
-      Image: "/prisma.webp",
-      width: 70,
-      height: 70,
-    },
+    // {
+    //   skill_name: "Postger SQL",
+    //   Image: "/postger.png",
+    //   width: 70,
+    //   height: 70,
+    // },
+    // {
+    //   skill_name: "My SQL",
+    //   Image: "/mysql.png",
+    //   width: 70,
+    //   height: 70,
+    // },
+    // {
+    //   skill_name: "Prisma",
+    //   Image: "/prisma.webp",
+    //   width: 70,
+    //   height: 70,
+    // },
     {
       skill_name: "Graphql",
       Image: "/graphql.png",
@@ -244,10 +250,16 @@ export const Skill_data = [
   
   export const Other_skill = [
     {
-      skill_name: "Go",
-      Image: "/go.png",
-      width: 60,
-      height: 60,
+      skill_name: "Framer Motion",
+      Image: "/framer.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Stripe Payment",
+      Image: "/stripe.webp",
+      width: 80,
+      height: 80,
     },
   ];
   
