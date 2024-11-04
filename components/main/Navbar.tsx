@@ -74,8 +74,8 @@ const Navbar = () => {
 
         {/* Mobile Dropdown Menu */}
         {menuOpen && (
-            <div className="w-full shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 flex flex-col items-center py-4 space-y-4 text-gray-200 md:hidden">
-            {/*<div className="w-full bg-[#0300145e] flex flex-col items-center py-4 space-y-4 text-gray-200 md:hidden">*/}
+            // <div className="w-full shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 flex flex-col items-center py-4 space-y-4 text-gray-200 md:hidden">
+            <div className="w-full bg-[#0300145e] flex flex-col items-center py-4 space-y-4 text-gray-200 md:hidden">
             <a href="#about-me" className="cursor-pointer" onClick={() => setMenuOpen(false)}>
                 About me
               </a>

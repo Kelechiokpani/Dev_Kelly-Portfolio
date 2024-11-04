@@ -27,7 +27,7 @@ const PaginatedList = ({ items, itemsPerPage, renderItems }:any) => {
     };
 
     return (
-        <div className="w-full m-4 cursor-pointer" style={{paddingRight:"3rem", cursor:"pointer"}}>
+        <div className="w-full m-4 cursor-pointer z-1" style={{paddingRight:"3rem", cursor:"pointer"}}>
         {renderItems(currentItems)}
         <StyledPagination>
                 <ReactPaginate
@@ -85,6 +85,7 @@ const PaginatedList = ({ items, itemsPerPage, renderItems }:any) => {
     }
 
     .active .page-link {
+        //background-color: #fff;
         background-color: #524c90;
         color: white;
 
