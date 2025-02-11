@@ -50,14 +50,12 @@ const HeroContent = () => {
           {/*I&apos;m a Full Stack Software Engineer with experience in Website,*/}
           {/*Mobile, and Software development. Check out my projects and skills.*/}
 
-
           Hi! I&apos;m Emmanuel Kelechi Okpani, <br/> A Full Stack Developer passionate about building responsive, high-performance web applications.
           <br className="mt-3"/>
           Skilled in JavaScript, React (Next Js),
           and Node.js (express js GraphQl),
           <br className="mt-3"/>
           I create solutions that enhance both user experience and functionality.
-
           With experience in agile environments and a strong foundation in both front-end and back-end development, I thrive on crafting scalable, impactful applications.
           <br className="mt-3"/>
           My goal is To develop efficient, user-focused solutions that drive growth.
@@ -66,8 +64,8 @@ const HeroContent = () => {
         </motion.p>
         <motion.a
           variants={slideInFromLeft(1)}
-          href="/file/cv.pdf"
-          download="cv.pdf"
+          href="/file/resume.pdf"
+          download="resume.pdf"
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
         >
           Download Cv

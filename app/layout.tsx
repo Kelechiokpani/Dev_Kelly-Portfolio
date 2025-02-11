@@ -9,8 +9,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Dev_Kelly",
-  description: "This is my portfolio",
+  description: "Emmanuel portfolio",
 };
+
 
 export default function RootLayout({
   children,
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
+        // className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
       >
         <StarsCanvas />
         <Navbar />
